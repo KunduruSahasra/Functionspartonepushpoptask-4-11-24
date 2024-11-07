@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Assignment1(push and pop inside function)</title>
+</head>
+
+<body>
+    <script>
+        // const op = {
+        //     push: function (arr1, ele) {
+        //         arr1[arr1.length] = ele;
+        //         console.log(arr1);
+        //     },
+        //     pop: function (arr1) {
+        //         poppedEle = arr1[arr1.length - 1]
+        //         arr1.length = arr1.length - 1;
+        //         console.log(poppedEle);
+        //     }
+        // }
+        // op.push([3, 4, 5, 6], 9);
+        // op.pop([3, 4, 5, 6]);
+
+
+
+                let pushpopWorking={
+            push: function(array,newElement){
+                array[array.length] = newElement;
+                console.log(array);
+                console.log(`element pushed is ${newElement}`);
+            },
+            pop: function(array){
+                poppedElement=array[array.length-1]
+                array.length=array.length-1;
+                console.log(`Element popped is ${poppedElement}`);
+            }
+        }
+        pushpopWorking.push([1,2,3,4,5],6);
+        pushpopWorking.pop([1,4,5,6]);
+    </script>
+</body>
+
+</html>
